@@ -1,0 +1,19 @@
+{
+  "name": "table-inbox",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": "^8.2.11",
+    "@angular/core": "^8.2.11"
+  },
+  "description": "Modulo para mostrar datos en una tabla",
+  "homepage": "https://github.com/ISCFERNANDO/inbox-project#readme",
+  "bugs": {
+    "email": "iscluis@hotmail.com"
+  },
+  "license": "ISC",
+  "author": {
+    "name": "Luis Fernando",
+    "email": "iscluis@hotmail.com"
+  },
+  "main": "inbox-table"
+}

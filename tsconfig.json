@@ -17,7 +17,33 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "inbox": [
+        "dist/inbox"
+      ],
+      "inbox/*": [
+        "dist/inbox/*"
+      ],
+      "table": [
+        "dist/table"
+      ],
+      "table/*": [
+        "dist/table/*"
+      ],
+      "inbox-table": [
+        "dist/inbox-table"
+      ],
+      "inbox-table/*": [
+        "dist/inbox-table/*"
+      ],
+      "table-inbox": [
+        "dist/table-inbox"
+      ],
+      "table-inbox/*": [
+        "dist/table-inbox/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

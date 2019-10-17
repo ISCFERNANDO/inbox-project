@@ -28,9 +28,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@clr/icons/clr-icons.min.css",
+              "node_modules/@clr/ui/clr-ui.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@webcomponents/custom-elements/custom-elements.min.js",
+              "node_modules/@clr/icons/clr-icons.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -124,6 +129,147 @@
           }
         }
       }
-    }},
+    },
+    "inbox": {
+      "projectType": "library",
+      "root": "projects/inbox",
+      "sourceRoot": "projects/inbox/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/inbox/tsconfig.lib.json",
+            "project": "projects/inbox/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/inbox/src/test.ts",
+            "tsConfig": "projects/inbox/tsconfig.spec.json",
+            "karmaConfig": "projects/inbox/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/inbox/tsconfig.lib.json",
+              "projects/inbox/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "table": {
+      "projectType": "library",
+      "root": "projects/table",
+      "sourceRoot": "projects/table/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/table/tsconfig.lib.json",
+            "project": "projects/table/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/table/src/test.ts",
+            "tsConfig": "projects/table/tsconfig.spec.json",
+            "karmaConfig": "projects/table/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/table/tsconfig.lib.json",
+              "projects/table/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "inbox-table": {
+      "projectType": "library",
+      "root": "projects/inbox-table",
+      "sourceRoot": "projects/inbox-table/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/inbox-table/tsconfig.lib.json",
+            "project": "projects/inbox-table/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/inbox-table/src/test.ts",
+            "tsConfig": "projects/inbox-table/tsconfig.spec.json",
+            "karmaConfig": "projects/inbox-table/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/inbox-table/tsconfig.lib.json",
+              "projects/inbox-table/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "table-inbox": {
+      "projectType": "library",
+      "root": "projects/table-inbox",
+      "sourceRoot": "projects/table-inbox/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/table-inbox/tsconfig.lib.json",
+            "project": "projects/table-inbox/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/table-inbox/src/test.ts",
+            "tsConfig": "projects/table-inbox/tsconfig.spec.json",
+            "karmaConfig": "projects/table-inbox/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/table-inbox/tsconfig.lib.json",
+              "projects/table-inbox/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
   "defaultProject": "inbox-project"
 }

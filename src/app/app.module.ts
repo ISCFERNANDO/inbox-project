@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ClarityModule } from '@clr/angular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TableComponent } from './components/table/table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ClarityModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
